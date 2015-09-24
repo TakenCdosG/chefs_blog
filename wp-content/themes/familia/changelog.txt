@@ -1,0 +1,5 @@
+** Changelog for Familia WordPress theme **
+** Author: http://www.themewarrior.com **
+
+July 18th, 2015 -- Version 1.0.0
+- Theme is released
