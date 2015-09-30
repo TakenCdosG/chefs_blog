@@ -2445,6 +2445,7 @@ span.screen-reader-text {
     margin-top: 10px;
     float: left;
     padding-right: 1px;
+    list-style: none;
 }
 .social-icons ul li a {
     display: inline-block;
@@ -2454,7 +2455,7 @@ span.screen-reader-text {
     padding: 2px 3px;
     border-radius: 2px;
     font-size: 21px;
-    color: #d0d0d0;
+    color: #808080!important;
     -webkit-transition: all 0.3s ease-out;
     -moz-transition: all 0.3s ease-out;
     -ms-transition: all 0.3s ease-out;
@@ -2469,6 +2470,8 @@ span.screen-reader-text {
     text-decoration: inherit;
     text-transform: none;
     speak: none;
+    margin-right: 7px;
+    opacity: 1;
 }
 .social-icons ul li a:hover {
     color: #fff !important;
