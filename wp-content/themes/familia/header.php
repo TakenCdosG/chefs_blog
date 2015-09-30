@@ -38,6 +38,15 @@ global $familia_option;
 						<?php endif; ?>
 					</div>
 
+                    <nav id="main-menu-right" class="site-navigation top-menu-navigation menu-right">
+                        <?php
+                        // Display Main menu top
+                        if ( has_nav_menu( 'main-menu-right' ) ) {
+                            wp_nav_menu( array ( 'theme_location' => 'main-menu-right', 'container' => null, 'menu_class' => 'main-menu', 'depth' => 2 ) );
+                        }
+                        ?>
+                    </nav>
+
                     <nav id="main-menu-bottom" class="site-navigation top-menu-navigation">
                         <?php
                         // Display Main menu top
@@ -46,15 +55,6 @@ global $familia_option;
                         }
                         ?>
                     </nav>
-
-					<nav id="main-menu-right" class="site-navigation top-menu-navigation menu-right">
-						<?php
-						// Display Main menu top
-						if ( has_nav_menu( 'main-menu-right' ) ) {
-							wp_nav_menu( array ( 'theme_location' => 'main-menu-right', 'container' => null, 'menu_class' => 'main-menu', 'depth' => 2 ) );
-						}
-						?>
-					</nav>
 					<div class="mobile-menu"></div>
 				</div>
 			</div>
