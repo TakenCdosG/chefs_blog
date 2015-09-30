@@ -47,7 +47,7 @@ global $familia_option;
                         ?>
                     </nav>
 
-                    <nav id="main-menu-bottom" class="site-navigation top-menu-navigation">
+                    <nav id="main-menu-left" class="site-navigation top-menu-navigation">
                         <?php
                         // Display Main menu top
                         if ( has_nav_menu( 'main-menu-left' ) ) {
