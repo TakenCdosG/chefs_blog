@@ -38,6 +38,30 @@ global $familia_option;
 						<?php endif; ?>
 					</div>
 
+                    <div id="social-network-icons" class="social-icons clearfix">
+                        <ul>
+                            <li class="facebook">
+                                <a href="https://www.facebook.com/ChefsEquipmentEmporiumOfOrange" title="Chef's Emporium on Facebook" target="_blank"></a>
+                            </li>
+                            <li class="twitter">
+                                <a href="https://twitter.com/ChefsEE" title="Chef's Emporium on Twitter" target="_blank"></a>
+                            </li>
+                            <li class="google-plus">
+                                <a href="https://plus.google.com/101025535689785150598/posts" title="Chef's Emporium on Google-Plus" target="_blank"></a>
+                            </li>
+                            <li class="pinterest">
+                                <a href="https://www.pinterest.com/chefsorange/" title="Chef's Emporium on Pinterest" target="_blank"></a>
+                            </li>
+                            <li class="youtube">
+                                <a href="https://www.youtube.com/user/ChefsEquipment" title="Chef's Emporium on YouTube" target="_blank"></a>
+                            </li>
+                            <li class="instagram">
+                                <a href="https://instagram.com/chefsequipmentemporium/" title="Chef's Emporium on Instagram" target="_blank"></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- .social-icons -->
+
                     <nav id="main-menu-right" class="site-navigation top-menu-navigation menu-right">
                         <?php
                         // Display Main menu top
