@@ -25,15 +25,6 @@ global $familia_option;
 		<header id="masthead" class="site-header">
 			<div id="main-header">
 				<div class="container clearfix">
-					<nav id="main-menu-left" class="site-navigation top-menu-navigation">
-						<?php
-						// Display Main menu top
-						if ( has_nav_menu( 'main-menu-left' ) ) {
-							wp_nav_menu( array ( 'theme_location' => 'main-menu-left', 'container' => null, 'menu_class' => 'main-menu', 'depth' => 2 ) );
-						}
-						?>
-					</nav>
-
 					<div id="logo" class="site-title">
 						<?php if( $familia_option['logo_type'] == '1' ) : ?>
 							<div class="box-site-title">
@@ -46,6 +37,15 @@ global $familia_option;
 							</a>
 						<?php endif; ?>
 					</div>
+
+                    <nav id="main-menu-bottom" class="site-navigation top-menu-navigation">
+                        <?php
+                        // Display Main menu top
+                        if ( has_nav_menu( 'main-menu-left' ) ) {
+                            wp_nav_menu( array ( 'theme_location' => 'main-menu-left', 'container' => null, 'menu_class' => 'main-menu', 'depth' => 2 ) );
+                        }
+                        ?>
+                    </nav>
 
 					<nav id="main-menu-right" class="site-navigation top-menu-navigation menu-right">
 						<?php
