@@ -2426,3 +2426,124 @@ span.screen-reader-text {
     display: inline-block;
     text-indent: -99999px;
 }
+
+
+/* Social Profiles */
+.social-icons {
+    position: absolute;
+    right: 0px;
+    bottom: 50%;
+    width: auto;
+    float: none;
+    margin: auto;
+}
+.social-icons ul {
+    margin: -10px 0 0;
+    float: right;
+}
+.social-icons ul li {
+    margin-top: 10px;
+    float: left;
+    padding-right: 1px;
+}
+.social-icons ul li a {
+    display: inline-block;
+    font-family: 'Genericons';
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    padding: 2px 3px;
+    border-radius: 2px;
+    font-size: 21px;
+    color: #d0d0d0;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+    vertical-align: top;
+    text-align: center;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    line-height: 1;
+    text-decoration: inherit;
+    text-transform: none;
+    speak: none;
+}
+.social-icons ul li a:hover {
+    color: #fff !important;
+}
+.social-icons ul li.facebook a:before {
+    content: '\f204';
+}
+.social-icons ul li.facebook a:hover {
+    background: #3B5998;
+}
+.social-icons ul li.twitter a:before {
+    content: '\f202';
+}
+.social-icons ul li.twitter a:hover {
+    background: #00aced;
+}
+.social-icons ul li.google-plus a:before {
+    content: '\f218';
+}
+.social-icons ul li.google-plus a:hover {
+    background: #cd4132;
+}
+.social-icons ul li.pinterest a:before {
+    content: '\f209';
+}
+.social-icons ul li.pinterest a:hover {
+    background: #cb2027;
+}
+.social-icons ul li.linkedin a:before {
+    content: '\f207';
+}
+.social-icons ul li.linkedin a:hover {
+    background: #005a87;
+}
+.social-icons ul li.tumblr a:before {
+    content: '\f214';
+}
+.social-icons ul li.tumblr a:hover {
+    background: #2b4761;
+}
+.social-icons ul li.vimeo a:before {
+    content: '\f212';
+}
+.social-icons ul li.vimeo a:hover {
+    background: #1bb7ea;
+}
+.social-icons ul li.instagram a:before {
+    content: '\f215';
+}
+.social-icons ul li.instagram a:hover {
+    background: #517fa4;
+}
+.social-icons ul li.flickr a:before {
+    content: '\f211';
+}
+.social-icons ul li.flickr a:hover {
+    background: #0063db;
+}
+.social-icons ul li.youtube a:before {
+    content: '\f213';
+}
+.social-icons ul li.youtube a:hover {
+    background: #cd4132;
+}
+.social-icons ul li.rss a:before {
+    content: '\f413';
+}
+.social-icons ul li.rss a:hover {
+    background: #fc7216;
+}
+.social-icons ul li.github a:before {
+    content: '\f200';
+}
+.social-icons ul li.github a:hover {
+    background: #151013;
+}
+
+/* End Social Profiles */
