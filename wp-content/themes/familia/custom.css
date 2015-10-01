@@ -3,3 +3,9 @@ ThemeWarrior Custom CSS
 -----------------------
 Please write your custom CSS style in this file, that way you don't need to change the default CSS file.
 */
+
+
+article.hentry h3.post-title a, article.hentry h1.post-title a {
+    color: #333333;
+    font-family: 'Vito-Bold'!important;
+}
