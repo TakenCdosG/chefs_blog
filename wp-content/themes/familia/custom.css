@@ -9,3 +9,7 @@ article.hentry h3.post-title a, article.hentry h1.post-title a {
     color: #333333;
     font-family: 'Vito-Bold'!important;
 }
+
+#featured-posts h2.post-title {
+    font-family: 'Vito-Bold' !important;
+}
