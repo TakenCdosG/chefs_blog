@@ -59,7 +59,7 @@ global $familia_option;
 		<div id="footer-bottom">
 			<div class="container">
 				<span><?php printf( __('&copy; Copyright %1$s %2$s.', 'familia' ), date_i18n('Y', strtotime( get_the_date() ) ), get_bloginfo('name') ); ?></span>
-				<span class="author">Theme by <a href="http://thinkcreativegroup.com/" target="_blank" title="ThinkCreativeGroup"><span>ThinkCreativeGroup</span></a> Powered by WordPress</span>
+				<span class="author">Theme by <a href="http://thinkcreativegroup.com/" target="_blank" title="ThinkCreativeGroup">ThinkCreativeGroup</a></span>
 			</div>
 		</div>
 	</footer>
