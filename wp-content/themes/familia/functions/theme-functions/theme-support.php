@@ -20,6 +20,7 @@ if ( function_exists( 'add_theme_support' ) ){
 	register_nav_menus( array(
 		'main-menu-left' => __( 'Main Menu Left', 'familia' ),
 		'main-menu-right' => __( 'Main Menu Right', 'familia' ),
+        'main-menu-top' => __( 'Main Menu Top', 'familia' ),
 	) );
 
 	// Add Title Tag Support

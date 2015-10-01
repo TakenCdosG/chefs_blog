@@ -38,6 +38,15 @@ global $familia_option;
 						<?php endif; ?>
 					</div>
 
+                    <nav id="main-menu-top" class="site-navigation top-menu-navigation menu-top">
+                        <?php
+                        // Display Main menu top
+                        if ( has_nav_menu( 'main-menu-top' ) ) {
+                            wp_nav_menu( array ( 'theme_location' => 'main-menu-top', 'container' => null, 'menu_class' => 'main-menu', 'depth' => 2 ) );
+                        }
+                        ?>
+                    </nav>
+
                     <div id="social-network-icons" class="social-icons clearfix">
                         <ul>
                             <li class="facebook">
