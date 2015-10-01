@@ -13,3 +13,7 @@ article.hentry h3.post-title a, article.hentry h1.post-title a {
 #featured-posts h2.post-title {
     font-family: 'Vito-Bold' !important;
 }
+
+article.hentry h1.post-title, h1.page-title, h1.entry-title, .page-title h1{
+    font-family: 'Vito-Bold' !important;
+}
