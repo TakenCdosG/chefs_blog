@@ -29,8 +29,16 @@ $args = array(
 $featured_posts = new WP_Query();
 $featured_posts->query( $args );
 
+    $top_image = get_field("top_image", 714);
+
 if ( $featured_posts->have_posts() ) :
 ?>
+
+    <?php if (!empty($top_image)): ?>
+<div id="top-image">
+    <img width="" height="" src="<?php echo $top_image; ?>" class="img-responsive" alt="" title="">
+</div>
+<?php endif; ?>
 
 <div id="featured-posts" class="clearfix">
 <div class="preload"></div>	
