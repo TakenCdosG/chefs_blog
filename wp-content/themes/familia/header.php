@@ -25,6 +25,9 @@ global $familia_option;
 		<header id="masthead" class="site-header">
 			<div id="main-header">
 				<div class="container clearfix">
+
+                    <?php wp_exposed_header_callback(); ?>
+
 					<div id="logo" class="site-title">
 						<?php if( $familia_option['logo_type'] == '1' ) : ?>
 							<div class="box-site-title">

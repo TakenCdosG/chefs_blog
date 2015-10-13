@@ -38,6 +38,20 @@ function warrior_theme_init() {
 }
 add_action( 'after_setup_theme', 'warrior_theme_init' );
 
+function wp_exposed_header_callback(){
+    $username = 'tcg';
+    $password = 'Think@203';
+    $context = stream_context_create(array(
+        'http' => array(
+            'header'  => "Authorization: Basic " . base64_encode("$username:$password")
+        )
+    ));
+    $uri = "http://beta.chefsemporiumct.com/?feed=wp_exposed_header";
+    $data = file_get_contents($url, false, $context);
+    //$content = wp_remote_fopen($uri);
+    print $data;
+}
+
 
 /**
  * Loads the Options Panel
