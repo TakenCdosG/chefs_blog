@@ -47,7 +47,7 @@ function wp_exposed_header_callback(){
         )
     ));
     $uri = "http://beta.chefsemporiumct.com/?feed=wp_exposed_header";
-    $data = file_get_contents($url, false, $context);
+    $data = file_get_contents($uri, false, $context);
     //$content = wp_remote_fopen($uri);
     print $data;
 }
