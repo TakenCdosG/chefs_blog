@@ -77,19 +77,20 @@
         heading.html([first_part, ' <strong>', last_word, '</strong>'].join(''));
     });
 
-
     // Mobile menu
     //$('ul.main-menu').mobileMenu();
-    var combinedMenu = $('#main-menu-left ul.main-menu').clone();
-    var secondMenu = $('#main-menu-right ul.main-menu').clone();
+    var combinedMenu = $('#main-nav ul.root').clone();
+    var searchform = $('.searchform').clone();
+    //var secondMenu = $('#main-menu-right ul.main-menu').clone();
 
-    secondMenu.children('li').appendTo(combinedMenu);
-
+    //secondMenu.children('li').appendTo(combinedMenu);
     combinedMenu.slicknav({
         duplicate:false,
         prependTo : '.mobile-menu',
-        label: 'Menu navigations',
+        label: 'MENU',
         allowParentLinks: true
     });
+
+    $('.mobile-menu').prepend(searchform);
 
 })(jQuery);
