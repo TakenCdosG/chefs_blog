@@ -93,7 +93,9 @@ if ( $featured_posts->have_posts() ) :
 					?>
 
 					<div class="detail">
-						<div class="category"><span><?php the_category(', '); ?></span></div>
+                        <?php $category_list = get_the_category_list( $separator = ', '); ?>
+                        <?php $category_list = explode(', ', $category_list); ?>
+						<div class="category"><span><?php echo $category_list[0]; ?></span></div>
 						<h2 class="post-title"><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php echo wp_trim_words( get_the_title(), $familia_option['featured_post_word_count'], '...' ); ?></a></h2>
 					</div>
 					<div class="bg-opacity"></div>
