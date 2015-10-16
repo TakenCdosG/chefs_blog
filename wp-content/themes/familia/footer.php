@@ -18,6 +18,7 @@ global $familia_option;
 
 	<!-- Start: Footer -->
 	<footer id="colophone">
+        <!--
 		<?php if ( function_exists( 'display_instagram' ) ) : ?>
 			<div id="instagram-feed-widget" class="clearfix">
 				<div class="heading">
@@ -36,6 +37,7 @@ global $familia_option;
 				</div>
 			</div>
 		<?php endif; ?>
+		-->
 
 		<div id="footer-widgets" class="clearfix">
 			<div class="container">
