@@ -31,7 +31,22 @@ global $familia_option;
 
 		<div class="<?php if ( has_post_thumbnail() ) { echo 'detail';} else { echo 'detail no-thumbnail';}?>">
 			<header class="entry-header">
-				<div class="post-category"><?php the_category(', ') ?></div>
+                <?php
+                $exclude = 'Featured image';
+                $category_list = get_the_category_list( $separator = ', ');
+                $category_list = explode(', ', $category_list);
+                foreach($category_list as $key => $category){
+                    $pos = strpos($category, $exclude);
+                    if ($pos === false) {
+
+                    }else{
+                        unset($category_list[$key]);
+                    }
+                }
+
+                $category_list = implode(", ", $category_list);
+                ?>
+				<div class="post-category"><?php echo $category_list; ?></div>
 				<?php if( ! is_single() ): ?>
 					<h3 class="post-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
 				<?php else: ?>
