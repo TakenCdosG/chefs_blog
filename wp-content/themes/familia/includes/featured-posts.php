@@ -93,9 +93,22 @@ if ( $featured_posts->have_posts() ) :
 					?>
 
 					<div class="detail">
-                        <?php $category_list = get_the_category_list( $separator = ', '); ?>
-                        <?php $category_list = explode(', ', $category_list); ?>
-						<div class="category"><span><?php echo $category_list[0]; ?></span></div>
+                        <?php
+                        $exclude = 'Featured image';
+                        $category_list = get_the_category_list( $separator = ', ');
+                        $category_list = explode(', ', $category_list);
+                        foreach($category_list as $key => $category){
+                            $pos = strpos($category, $exclude);
+                            if ($pos === false) {
+
+                            }else{
+                                unset($category_list[$key]);
+                            }
+                        }
+
+                        $category_list = implode(", ", $category_list);
+                        ?>
+						<div class="category"><span><?php echo $category_list; ?></span></div>
 						<h2 class="post-title"><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php echo wp_trim_words( get_the_title(), $familia_option['featured_post_word_count'], '...' ); ?></a></h2>
 					</div>
 					<div class="bg-opacity"></div>
